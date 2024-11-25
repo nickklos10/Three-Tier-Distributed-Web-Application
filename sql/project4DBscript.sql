@@ -187,8 +187,7 @@ select sname, status
 from suppliers;
 END$$
 DELIMITER ;
-# uncomment the following 4 lines if you want to see the results of creating and
-populating the database
+# uncomment the following 4 lines if you want to see the results of creating and populating the Db
 # select * from suppliers;
 # select * from parts;
 # select * from jobs;
