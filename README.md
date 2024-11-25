@@ -13,7 +13,6 @@ A servlet/JSP-based multi-tiered enterprise application using a Tomcat container
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
 - [Business Logic Implementation](#business-logic-implementation)
-- [License](#license)
 
 ## Introduction
 This project is a multi-tiered enterprise system that demonstrates the use of servlets and JSPs in a Tomcat container. It provides a web interface for client and root-level users to execute SQL commands on a database. The application includes server-side business logic that automatically updates supplier statuses based on certain conditions.
@@ -150,6 +149,3 @@ Example:
 - Inserting a shipment (S5, P6, J4, 400) increases the status of supplier S5 by 5
 - Updating shipments with quantity >= 100 affects only the suppliers involved in those shipments
 
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
