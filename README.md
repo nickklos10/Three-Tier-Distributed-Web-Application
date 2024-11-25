@@ -65,14 +65,14 @@ Alternatively, build the project using your IDE's build tools.
 
 ## Database Setup
 
-### 1. Create the Project 4 Database and populate it
-Log in to your MySQL server and run the contents of file project4DBscript.sql 
+1. Create the Project 4 Database and populate it:
+    - Log in to your MySQL server and run the contents of file project4DBscript.sql 
 
-### 2. Create the Credentials DB and populate it
-Run the contents of file credentialsDBscript.sql 
+2. Create the Credentials DB and populate it:
+    - Run the contents of file credentialsDBscript.sql 
 
-### 3. Create the users and give permissions
-Run the contents of file ClientCreattionPermissionsScript.sql
+3. Create the users and give permissions:
+    - Run the contents of file ClientCreattionPermissionsScript.sql
 
 ## Configuration
 
