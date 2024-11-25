@@ -46,7 +46,7 @@ This project is a multi-tiered enterprise system that demonstrates the use of se
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/nickklos10/project4-enterprise-system.git
+git clone https://github.com/nickklos10/Three-Tier-Distributed-Web-Application.git
 ```
 
 ### Import the Project into Your IDE
