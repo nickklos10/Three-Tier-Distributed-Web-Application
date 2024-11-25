@@ -73,7 +73,7 @@ Alternatively, build the project using your IDE's build tools.
 ## Configuration
 
 ### Database Configuration Files
-Copy the client-level.properties and root-level.properties files to the WEB-INF/lib directory.
+Copy the client-level.properties, root-level.properties and accountant-level.properties files to the WEB-INF/lib directory.
 
 Update the database connection details (URL, username, password) in both properties files.
 
@@ -81,16 +81,23 @@ Update the database connection details (URL, username, password) in both propert
 ```properties
 jdbc.driver=com.mysql.cj.jdbc.Driver
 jdbc.url=jdbc:mysql://localhost:3306/project4_db
-jdbc.username=client_user
-jdbc.password=client_password
+jdbc.username=client
+jdbc.password=client
 ```
 
 #### root-level.properties
 ```properties
 jdbc.driver=com.mysql.cj.jdbc.Driver
 jdbc.url=jdbc:mysql://localhost:3306/project4_db
-jdbc.username=root_user
+jdbc.username=root
 jdbc.password=root_password
+```
+#### accountant-level.properties
+```properties
+jdbc.driver=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/project4_db
+jdbc.username=theaccountant
+jdbc.password=theaccountant
 ```
 
 ### Tomcat Configuration
@@ -105,7 +112,7 @@ Ensure that your Tomcat server is running.
 ### Access the Application
 Open a web browser and navigate to:
 ```
-http://localhost:8080/project4-enterprise-system
+http://localhost:8080/Three-Tier-Distributed-Web-Application
 ```
 
 ## Usage
@@ -116,7 +123,7 @@ http://localhost:8080/project4-enterprise-system
 Navigate to the login page and enter the client-level credentials:
 ```
 Username: client
-Password: client_password
+Password: client
 ```
 
 #### Features
