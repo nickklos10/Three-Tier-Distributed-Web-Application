@@ -13,9 +13,6 @@ A servlet/JSP-based multi-tiered enterprise application using a Tomcat container
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
 - [Business Logic Implementation](#business-logic-implementation)
-- [Screenshots](#screenshots)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -153,39 +150,6 @@ Example:
 - Inserting a shipment (S5, P6, J4, 400) increases the status of supplier S5 by 5
 - Updating shipments with quantity >= 100 affects only the suppliers involved in those shipments
 
-## Screenshots
-[Include screenshots of your application here, such as the login page, client interface, root interface, and examples of query results and business logic notifications.]
-
-## Project Structure
-```
-project4-enterprise-system/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com.project4/
-│   │   │       ├── ClientServlet.java
-│   │   │       ├── RootUserServlet.java
-│   │   │       ├── DBConnection.java
-│   │   │       └── ...
-│   │   ├── resources/
-│   │   │   ├── client-level.properties
-│   │   │   └── root-level.properties
-│   │   └── webapp/
-│   │       ├── WEB-INF/
-│   │       │   ├── web.xml
-│   │       │   └── lib/
-│   │       ├── clientHome.jsp
-│   │       ├── root.jsp
-│   │       ├── authentication.jsp
-│   │       ├── unauthorized.jsp
-│   │       └── ...
-├── pom.xml
-├── README.md
-└── ...
-```
-
-## Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
