@@ -9,10 +9,11 @@ create database credentialsDB;
 use credentialsDB;
 # create the schemas for the userCredentials relation in this database
 create table usercredentials (
-login_username varchar(25),
-login_password varchar(25),
-primary key (login_username)
+  login_username varchar(25),
+  login_password varchar(25),
+  primary key (login_username)
 );
+
 # NOTE: you will need to change your root user password value
 insert into usercredentials values ("root", "rootMAC1$");
 insert into usercredentials values ("client", "client");
