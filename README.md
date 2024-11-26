@@ -144,6 +144,19 @@ Password: root_password
 - Has root-level database permissions
 - Triggers server-side business logic for certain operations
 
+### Accountant-Level User
+
+#### Login
+Navigate to the login page and enter the accountant-level credentials:
+```
+Username: theaccountant
+Password: theaccountant
+```
+
+#### Features
+- Can only execute a pre-selected amount of SQL statements.
+
+
 ## Business Logic Implementation
 
 The application implements server-side business logic for the root-level user:
