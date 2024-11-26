@@ -15,7 +15,7 @@ A servlet/JSP-based multi-tiered enterprise application using a Tomcat container
 - [Business Logic Implementation](#business-logic-implementation)
 
 ## Introduction
-This project is a multi-tiered enterprise system that demonstrates the use of servlets and JSPs in a Tomcat container. It provides a web interface for client and root-level users to execute SQL commands on a database. The application includes server-side business logic that automatically updates supplier statuses based on certain conditions.
+This project is a multi-tiered enterprise system that demonstrates the use of servlets and JSPs in a Tomcat container. It provides a web interface for clients, accountants and root-level users to execute SQL commands on a database. The application includes server-side business logic that automatically updates supplier statuses based on certain conditions.
 
 ## Technologies Used
 - Java EE Servlets
