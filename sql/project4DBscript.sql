@@ -3,43 +3,48 @@
 #
 # delete the database if it already exists
 drop database if exists project4;
-#create a new database named project4
+# create a new database named project4
 create database project4;
-#switch to the new database
+# switch to the new database
 use project4;
-#create the schemas for the four relations in this database
+# create the schemas for the four relations in this database
+  
 create table suppliers (
-snum varchar(6) not null,
-sname varchar(20) not null,
-status integer,
-city varchar(20),
-primary key (snum)
+  snum varchar(6) not null,
+  sname varchar(20) not null,
+  status integer,
+  city varchar(20),
+  primary key (snum)
 ) engine = InnoDB;
+
 create table parts (
-pnum varchar(6) not null,
-pname varchar(15) not null,
-color varchar(15),
-weight integer,
-city varchar(20),
-primary key (pnum)
+  pnum varchar(6) not null,
+  pname varchar(15) not null,
+  color varchar(15),
+  weight integer,
+  city varchar(20),
+  primary key (pnum)
 ) engine = InnoDB;
+
 create table jobs (
-jnum varchar(6) not null,
-jname varchar(15) not null,
-numworkers integer,
-city varchar(20),
-primary key (jnum)
-)engine = InnoDB;
+  jnum varchar(6) not null,
+  jname varchar(15) not null,
+  numworkers integer,
+  city varchar(20),
+  primary key (jnum)
+) engine = InnoDB;
+
 create table shipments (
-snum varchar(6) not null,
-pnum varchar(6) not null,
-jnum varchar(6) not null,
-quantity integer,
-primary key (snum, pnum, jnum),
-foreign key (snum) references suppliers (snum),
-foreign key (pnum) references parts (pnum),
-foreign key (jnum) references jobs (jnum)
-)engine = InnoDB;
+  snum varchar(6) not null,
+  pnum varchar(6) not null,
+  jnum varchar(6) not null,
+  quantity integer,
+  primary key (snum, pnum, jnum),
+  foreign key (snum) references suppliers (snum),
+  foreign key (pnum) references parts (pnum),
+  foreign key (jnum) references jobs (jnum)
+)  engine = InnoDB;
+
 # populate the database tables
 insert into suppliers values ('S20','Danilo Rossi',2,'Milan');
 insert into suppliers values ('S21','Lizzie Armistead',1,'Hempstead');
@@ -150,7 +155,9 @@ insert into shipments values ('S12','P3','J22',750);
 insert into shipments values ('S17','P3','J2',800);
 insert into shipments values ('S6','P11','J2',40);
 insert into shipments values ('S22','P1','J3',120);
+
 # define the stored procedures for the project4 DB
+  
 DELIMITER $$
 CREATE PROCEDURE Get_The_Sum_Of_All_Parts_Weights()
 BEGIN
@@ -158,6 +165,7 @@ select sum(weight) as Sum_Of_All_Part_Weights
 from parts;
 END$$
 DELIMITER ;
+
 DELIMITER $$
 CREATE PROCEDURE Get_The_Maximum_Status_Of_All_Suppliers()
 BEGIN
@@ -165,6 +173,7 @@ select max(status) as Maximum_Status_Of_All_Suppliers
 from suppliers;
 END$$
 DELIMITER ;
+
 DELIMITER $$
 CREATE PROCEDURE Get_The_Total_Number_Of_Shipments()
 BEGIN
@@ -172,6 +181,7 @@ select count(*) as The_Total_Number_Of_Shipments
 from shipments;
 END$$
 DELIMITER ;
+
 DELIMITER $$
 CREATE PROCEDURE Get_The_Name_Of_The_Job_With_The_Most_Workers()
 BEGIN
@@ -180,6 +190,7 @@ from jobs
 where numworkers = (select max(numworkers) from jobs);
 END$$
 DELIMITER ;
+
 DELIMITER $$
 CREATE PROCEDURE List_The_Name_And_Status_Of_All_Suppliers()
 BEGIN
@@ -187,6 +198,7 @@ select sname, status
 from suppliers;
 END$$
 DELIMITER ;
+
 # uncomment the following 4 lines if you want to see the results of creating and populating the Db
 # select * from suppliers;
 # select * from parts;
