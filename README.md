@@ -1,6 +1,6 @@
 # Three tier distributed Web App for an Enterprise system
 
-A servlet/JSP-based multi-tiered enterprise application using a Tomcat container that allows client and root-level users to execute SQL queries and updates with specific business logic implementation.
+A servlet/JSP-based multi-tiered enterprise application using a Tomcat container that allows clients, accountants and root-level users to execute SQL queries and updates with specific business logic implementation.
 
 ## Table of Contents
 - [Introduction](#introduction)
