@@ -80,7 +80,7 @@ Update the database connection details (URL, username, password) in both propert
 #### client-level.properties
 ```properties
 jdbc.driver=com.mysql.cj.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/project4_db
+jdbc.url=jdbc:mysql://localhost:3306/project4
 jdbc.username=client
 jdbc.password=client
 ```
@@ -88,14 +88,14 @@ jdbc.password=client
 #### root-level.properties
 ```properties
 jdbc.driver=com.mysql.cj.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/project4_db
+jdbc.url=jdbc:mysql://localhost:3306/project4
 jdbc.username=root
 jdbc.password=root_password
 ```
 #### accountant-level.properties
 ```properties
 jdbc.driver=com.mysql.cj.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/project4_db
+jdbc.url=jdbc:mysql://localhost:3306/project4
 jdbc.username=theaccountant
 jdbc.password=theaccountant
 ```
